@@ -35,7 +35,7 @@ else{
 
 
 //show what session
-echo 'Login as <b>'. $role . '</b> with email <b>' .  $_SESSION['email'] . '</b> </br></br>'; 
+echo 'You are Logined as <b>'. $role . '</b> and your email is <b>' .  $_SESSION['email'] . '</b> </br></br>'; 
 
 # display link to "create" form
 if($role=='admin'){
@@ -43,7 +43,7 @@ if($role=='admin'){
 }
 
 //logout link
-echo "<a style='color: green' href='logout.php'>LOGOUT</a> <br> <br>";
+echo "<a style='color: red' href='logout.php'>LOGOUT</a> <br> <br>";
 
 
 # display all records
